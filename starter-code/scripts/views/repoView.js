@@ -9,6 +9,7 @@
       render the repos. */
   repoView.renderRepos = function() {
     $('#about .projects').empty().append(
+      // TODO: EXPERIMENT - TRY PASSING IN ANOTHER ARGUMENT (OTHER THAN 'NAME' BELOW)
       repos.withTheAttribute('name')
       .map(repoCompiler)
     );
